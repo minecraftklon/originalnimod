@@ -9,13 +9,144 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "halobiom"
+    },
+    {
+      "name": "Haloarrmorgreen",
+      "type": "armor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "haloarrmorgreen",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Haloarmorblue",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "haloarmorblue",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Granat",
+      "type": "gun",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "granat"
+    },
+    {
+      "name": "Granade",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "granade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Explode",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet"
+    },
+    {
+      "name": "Gun",
+      "type": "gun",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gun"
+    },
+    {
+      "name": "Bullets",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullets",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.oryginln_mod.halobiom": "Halobiom"
+      "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
+      "item.oryginln_mod.haloarmorblue_chestplate": "Haloarmorblue Body",
+      "item.oryginln_mod.gun": "Neddler Gun",
+      "item.oryginln_mod.granat": "Granát",
+      "item.oryginln_mod.haloarmorblue_boots": "Haloarmorblue Boots",
+      "biome.oryginln_mod.halobiom": "Halobiom",
+      "item.oryginln_mod.haloarrmorgreen_helmet": "Haloarrmorblue Helmet",
+      "item.oryginln_mod.bullet": "Mimozemský náboj",
+      "item.oryginln_mod.haloarrmorgreen_chestplate": "Haloarrmorblue Body",
+      "item.oryginln_mod.haloarrmorgreen_leggings": "Haloarrmorblue Leggings",
+      "item.oryginln_mod.haloarrmorgreen_boots": "Haloarrmorblue Boots",
+      "item.oryginln_mod.haloarmorblue_leggings": "Haloarmorblue Leggings"
     }
   },
   "foldersRoot": {

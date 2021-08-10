@@ -1,3 +1,14 @@
 {
-  "biome.oryginln_mod.halobiom": "Halobiom"
+  "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
+  "item.oryginln_mod.haloarmorblue_chestplate": "Haloarmorblue Body",
+  "item.oryginln_mod.gun": "Neddler Gun",
+  "item.oryginln_mod.granat": "Granát",
+  "item.oryginln_mod.haloarmorblue_boots": "Haloarmorblue Boots",
+  "biome.oryginln_mod.halobiom": "Halobiom",
+  "item.oryginln_mod.haloarrmorgreen_helmet": "Haloarrmorblue Helmet",
+  "item.oryginln_mod.bullet": "Mimozemský náboj",
+  "item.oryginln_mod.haloarrmorgreen_chestplate": "Haloarrmorblue Body",
+  "item.oryginln_mod.haloarrmorgreen_leggings": "Haloarrmorblue Leggings",
+  "item.oryginln_mod.haloarrmorgreen_boots": "Haloarrmorblue Boots",
+  "item.oryginln_mod.haloarmorblue_leggings": "Haloarmorblue Leggings"
 }
