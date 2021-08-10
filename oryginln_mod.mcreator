@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Halobiom",
-      "type": "biome",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "halobiom"
-    },
-    {
       "name": "Haloarrmorgreen",
       "type": "armor",
       "sortid": 2,
@@ -166,49 +157,13 @@
       }
     },
     {
-      "name": "Klkl",
-      "type": "structure",
+      "name": "Armor",
+      "type": "mob",
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "klkl"
-    },
-    {
-      "name": "K",
-      "type": "structure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "k"
-    },
-    {
-      "name": "S",
-      "type": "structure",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "s"
-    },
-    {
-      "name": "W",
-      "type": "structure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "w"
-    },
-    {
-      "name": "E",
-      "type": "structure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "e"
+      "registry_name": "armor"
     }
   ],
   "variable_elements": [],
@@ -218,13 +173,14 @@
       "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
       "item.oryginln_mod.haloarmorblue_chestplate": "Haloarmorblue Body",
       "item.oryginln_mod.gun": "Neddler Gun",
+      "entity.oryginln_mod.armor": "Armor",
       "item.oryginln_mod.granat": "Granát",
       "item.oryginln_mod.haloarmorblue_boots": "Haloarmorblue Boots",
-      "biome.oryginln_mod.halobiom": "Halobiom",
       "item.oryginln_mod.haloarrmorgreen_helmet": "Haloarrmorblue Helmet",
       "item.oryginln_mod.bullet": "Mimozemský náboj",
       "item.oryginln_mod.haloarrmorgreen_chestplate": "Haloarrmorblue Body",
       "item.oryginln_mod.gan_2": "Gun",
+      "item.oryginln_mod.armor_spawn_egg": "Armor Spawn Egg",
       "item.oryginln_mod.haloarrmorgreen_leggings": "Haloarrmorblue Leggings",
       "item.oryginln_mod.haloarrmorgreen_boots": "Haloarrmorblue Boots",
       "item.oryginln_mod.haloarmorblue_leggings": "Haloarmorblue Leggings",
