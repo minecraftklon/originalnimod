@@ -58,7 +58,7 @@ public class Gan2Item extends OryginlnModModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
+			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(400));
 			setRegistryName("gan_2");
 		}
 
