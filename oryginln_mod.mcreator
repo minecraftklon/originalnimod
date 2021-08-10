@@ -129,6 +129,41 @@
           }
         ]
       }
+    },
+    {
+      "name": "Gan2",
+      "type": "gun",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gan_2"
+    },
+    {
+      "name": "Nnn",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nnn"
+    },
+    {
+      "name": "Neboje",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "neboje",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -144,9 +179,11 @@
       "item.oryginln_mod.haloarrmorgreen_helmet": "Haloarrmorblue Helmet",
       "item.oryginln_mod.bullet": "Mimozemský náboj",
       "item.oryginln_mod.haloarrmorgreen_chestplate": "Haloarrmorblue Body",
+      "item.oryginln_mod.gan_2": "Gun",
       "item.oryginln_mod.haloarrmorgreen_leggings": "Haloarrmorblue Leggings",
       "item.oryginln_mod.haloarrmorgreen_boots": "Haloarrmorblue Boots",
-      "item.oryginln_mod.haloarmorblue_leggings": "Haloarmorblue Leggings"
+      "item.oryginln_mod.haloarmorblue_leggings": "Haloarmorblue Leggings",
+      "item.oryginln_mod.nnn": "malý náboj"
     }
   },
   "foldersRoot": {

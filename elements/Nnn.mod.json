@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "naboj",
+    "texture": "png-clipart-pixel-art-bullet-others-black-maker",
     "customModelName": "Normal",
-    "name": "Mimozemský náboj",
+    "name": "malý náboj",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "COMBAT"

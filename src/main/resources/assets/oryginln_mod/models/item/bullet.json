@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "oryginln_mod:items/lepsi_nez_jindrovo_naboje"
+    "layer0": "oryginln_mod:items/naboj"
   }
 }
