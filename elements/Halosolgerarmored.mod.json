@@ -33,16 +33,16 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": "CUSTOM:Haloarrmorgreen.helmet"
+      "value": "CUSTOM:Haloarmorblue.helmet"
     },
     "equipmentBody": {
-      "value": "CUSTOM:Haloarrmorgreen.body"
+      "value": "CUSTOM:Haloarmorblue.body"
     },
     "equipmentLeggings": {
-      "value": "CUSTOM:Haloarrmorgreen.legs"
+      "value": "CUSTOM:Haloarmorblue.legs"
     },
     "equipmentBoots": {
-      "value": "CUSTOM:Haloarrmorgreen.boots"
+      "value": "CUSTOM:Haloarmorblue.boots"
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
