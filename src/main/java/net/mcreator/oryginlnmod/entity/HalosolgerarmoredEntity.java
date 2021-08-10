@@ -39,6 +39,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
+import net.mcreator.oryginlnmod.item.HaloarrmorgreenItem;
 import net.mcreator.oryginlnmod.item.Gan2Item;
 import net.mcreator.oryginlnmod.entity.renderer.HalosolgerarmoredRenderer;
 import net.mcreator.oryginlnmod.OryginlnModModElements;
@@ -95,6 +96,10 @@ public class HalosolgerarmoredEntity extends OryginlnModModElements.ModElement {
 			experienceValue = 35;
 			setNoAI(false);
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Gan2Item.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(HaloarrmorgreenItem.helmet, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(HaloarrmorgreenItem.body, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(HaloarrmorgreenItem.legs, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(HaloarrmorgreenItem.boots, (int) (1)));
 		}
 
 		@Override
