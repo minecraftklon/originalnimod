@@ -164,6 +164,51 @@
           }
         ]
       }
+    },
+    {
+      "name": "Klkl",
+      "type": "structure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "klkl"
+    },
+    {
+      "name": "K",
+      "type": "structure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "k"
+    },
+    {
+      "name": "S",
+      "type": "structure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s"
+    },
+    {
+      "name": "W",
+      "type": "structure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "w"
+    },
+    {
+      "name": "E",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e"
     }
   ],
   "variable_elements": [],
