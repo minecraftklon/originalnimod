@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "png-clipart-pixel-art-bullet-others-black-maker",
+    "texture": "naboj_",
     "customModelName": "Normal",
     "name": "malý náboj",
     "rarity": "COMMON",
