@@ -27,7 +27,7 @@
       "name": "Neboje"
     },
     "bulletPower": 1.0,
-    "bulletDamage": 15.0,
+    "bulletDamage": 3.5,
     "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
