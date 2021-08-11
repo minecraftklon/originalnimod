@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "oryginln_mod:items/diamond_sword"
+  }
+}
