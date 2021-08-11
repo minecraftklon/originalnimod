@@ -62,8 +62,8 @@ public class Biom1Biome extends OryginlnModModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-3407668).setWaterColor(-52225).setWaterFogColor(-52225)
-						.withSkyColor(-3407668).withFoliageColor(10387789).withGrassColor(-65536).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-10092442).setWaterColor(-52225).setWaterFogColor(-52225)
+						.withSkyColor(-10092442).withFoliageColor(10387789).withGrassColor(-65536).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.MYCELIUM.getDefaultState(),
 								Blocks.BLACK_CONCRETE.getDefaultState(), Blocks.BLACK_CONCRETE.getDefaultState())));
