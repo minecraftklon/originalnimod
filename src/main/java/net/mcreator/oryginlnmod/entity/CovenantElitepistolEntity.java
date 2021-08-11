@@ -39,6 +39,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
+import net.mcreator.oryginlnmod.item.PlasmastitItem;
 import net.mcreator.oryginlnmod.item.GunItem;
 import net.mcreator.oryginlnmod.entity.renderer.CovenantElitepistolRenderer;
 import net.mcreator.oryginlnmod.OryginlnModModElements;
@@ -96,6 +97,7 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 			setNoAI(false);
 			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(GunItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(PlasmastitItem.block, (int) (1)));
 		}
 
 		@Override
