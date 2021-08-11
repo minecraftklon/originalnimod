@@ -93,6 +93,7 @@ public class ArmorEntity extends OryginlnModModElements.ModElement {
 			super(type, world);
 			experienceValue = 20;
 			setNoAI(false);
+			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Gan2Item.block, (int) (1)));
 		}
 
@@ -118,6 +119,11 @@ public class ArmorEntity extends OryginlnModModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
 		}
 
 		@Override

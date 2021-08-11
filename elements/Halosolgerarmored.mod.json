@@ -110,7 +110,7 @@
     },
     "rangedItemType": "Gan2",
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,

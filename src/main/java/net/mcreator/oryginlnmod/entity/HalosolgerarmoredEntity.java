@@ -95,6 +95,7 @@ public class HalosolgerarmoredEntity extends OryginlnModModElements.ModElement {
 			super(type, world);
 			experienceValue = 35;
 			setNoAI(false);
+			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Gan2Item.block, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(HaloarmorblueItem.helmet, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(HaloarmorblueItem.body, (int) (1)));
@@ -124,6 +125,11 @@ public class HalosolgerarmoredEntity extends OryginlnModModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
 		}
 
 		@Override

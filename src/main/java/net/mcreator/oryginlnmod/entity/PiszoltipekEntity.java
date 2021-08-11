@@ -95,6 +95,7 @@ public class PiszoltipekEntity extends OryginlnModModElements.ModElement {
 			super(type, world);
 			experienceValue = 20;
 			setNoAI(false);
+			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(PistolItem.block, (int) (1)));
 		}
 
@@ -120,6 +121,11 @@ public class PiszoltipekEntity extends OryginlnModModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
 		}
 
 		@Override
