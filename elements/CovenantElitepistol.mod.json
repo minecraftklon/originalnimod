@@ -108,7 +108,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "Gan2",
+    "rangedItemType": "Gun",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
