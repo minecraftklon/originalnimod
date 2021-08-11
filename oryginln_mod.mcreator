@@ -214,8 +214,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
       "item.oryginln_mod.pistol": "Gun",
+      "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
       "item.oryginln_mod.haloarmorblue_chestplate": "Haloarmorblue Body",
       "item.oryginln_mod.gun": "Neddler Gun",
       "entity.oryginln_mod.armor": "Halo solger",
