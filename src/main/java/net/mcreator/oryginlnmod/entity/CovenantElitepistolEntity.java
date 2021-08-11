@@ -40,6 +40,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
 import net.mcreator.oryginlnmod.item.GunItem;
+import net.mcreator.oryginlnmod.item.Gan2Item;
 import net.mcreator.oryginlnmod.entity.renderer.CovenantElitepistolRenderer;
 import net.mcreator.oryginlnmod.OryginlnModModElements;
 
@@ -145,7 +146,7 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 		}
 
 		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
-			GunItem.shoot(this, target);
+			Gan2Item.shoot(this, target);
 		}
 	}
 }
