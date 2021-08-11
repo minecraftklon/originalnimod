@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "ammo",
     "customModelName": "Normal",
-    "name": "malý náboj",
+    "name": "náboj do pistolky",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "COMBAT"
