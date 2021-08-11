@@ -182,17 +182,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pistol"
+    },
+    {
+      "name": "Naboje2",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "naboje_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pistolnaboj",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pistolnaboj"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.oryginln_mod.pistol": "Gun",
       "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
+      "item.oryginln_mod.pistol": "Gun",
       "item.oryginln_mod.haloarmorblue_chestplate": "Haloarmorblue Body",
       "item.oryginln_mod.gun": "Neddler Gun",
       "entity.oryginln_mod.armor": "Halo solger",
+      "item.oryginln_mod.pistolnaboj": "malý náboj",
       "item.oryginln_mod.granat": "Granát",
       "item.oryginln_mod.haloarmorblue_boots": "Haloarmorblue Boots",
       "entity.oryginln_mod.halosolgerarmored": "Halo solger armored",

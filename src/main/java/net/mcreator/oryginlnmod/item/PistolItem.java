@@ -31,7 +31,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.oryginlnmod.procedures.NebojeProcedure;
+import net.mcreator.oryginlnmod.procedures.Naboje2Procedure;
 import net.mcreator.oryginlnmod.entity.renderer.PistolRenderer;
 import net.mcreator.oryginlnmod.OryginlnModModElements;
 
@@ -86,23 +86,24 @@ public class PistolItem extends OryginlnModModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == new ItemStack(NnnItem.block, (int) (1)).getItem());
+					ItemStack stack = ShootableItem.getHeldAmmo(entity,
+							e -> e.getItem() == new ItemStack(PistolnabojItem.block, (int) (1)).getItem());
 					if (stack == ItemStack.EMPTY) {
 						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
 							ItemStack teststack = entity.inventory.mainInventory.get(i);
-							if (teststack != null && teststack.getItem() == new ItemStack(NnnItem.block, (int) (1)).getItem()) {
+							if (teststack != null && teststack.getItem() == new ItemStack(PistolnabojItem.block, (int) (1)).getItem()) {
 								stack = teststack;
 								break;
 							}
 						}
 					}
 					if (entity.abilities.isCreativeMode || stack != ItemStack.EMPTY) {
-						ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 3.5, 1);
+						ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 2.5, 1);
 						itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 						if (entity.abilities.isCreativeMode) {
 							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 						} else {
-							if (new ItemStack(NnnItem.block, (int) (1)).isDamageable()) {
+							if (new ItemStack(PistolnabojItem.block, (int) (1)).isDamageable()) {
 								if (stack.attemptDamageItem(1, random, entity)) {
 									stack.shrink(1);
 									stack.setDamage(0);
@@ -118,7 +119,7 @@ public class PistolItem extends OryginlnModModElements.ModElement {
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
 							$_dependencies.put("entity", entity);
-							NebojeProcedure.executeProcedure($_dependencies);
+							Naboje2Procedure.executeProcedure($_dependencies);
 						}
 					}
 				}
@@ -152,12 +153,12 @@ public class PistolItem extends OryginlnModModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(NnnItem.block, (int) (1));
+			return new ItemStack(PistolnabojItem.block, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(NnnItem.block, (int) (1));
+			return new ItemStack(PistolnabojItem.block, (int) (1));
 		}
 
 		@Override
@@ -203,7 +204,7 @@ public class PistolItem extends OryginlnModModElements.ModElement {
 		double d3 = target.getPosZ() - entity.getPosZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(3.5);
+		entityarrow.setDamage(2.5);
 		entityarrow.setKnockbackStrength(1);
 		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
