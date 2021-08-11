@@ -173,6 +173,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "halosolgerarmored"
+    },
+    {
+      "name": "Pistol",
+      "type": "gun",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pistol"
     }
   ],
   "variable_elements": [],
@@ -180,6 +189,7 @@
   "language_map": {
     "en_us": {
       "item.oryginln_mod.haloarmorblue_helmet": "Haloarmorblue Helmet",
+      "item.oryginln_mod.pistol": "Gun",
       "item.oryginln_mod.haloarmorblue_chestplate": "Haloarmorblue Body",
       "item.oryginln_mod.gun": "Neddler Gun",
       "entity.oryginln_mod.armor": "Halo solger",
