@@ -76,7 +76,7 @@
       "value": "Blocks.MAGMA"
     },
     "treeVines": {
-      "value": "Blocks.WEEPING_VINES"
+      "value": "Blocks.WEEPING_VINES_PLANT"
     },
     "treeFruits": {
       "value": ""
@@ -104,7 +104,7 @@
         },
         "minGroup": 4,
         "maxGroup": 4,
-        "weight": 20,
+        "weight": 5,
         "spawnType": "monster"
       },
       {
@@ -113,7 +113,7 @@
         },
         "minGroup": 4,
         "maxGroup": 4,
-        "weight": 20,
+        "weight": 5,
         "spawnType": "monster"
       }
     ]
