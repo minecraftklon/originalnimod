@@ -109,7 +109,7 @@
       "value": ""
     },
     "rangedItemType": "Gun",
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "creature",

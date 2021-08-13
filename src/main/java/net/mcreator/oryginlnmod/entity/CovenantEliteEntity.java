@@ -7,12 +7,8 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
@@ -24,17 +20,17 @@ import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.material.Material;
 
 import net.mcreator.oryginlnmod.item.EnergiswordItem;
 import net.mcreator.oryginlnmod.entity.renderer.CovenantEliteRenderer;
@@ -49,7 +45,6 @@ public class CovenantEliteEntity extends OryginlnModModElements.ModElement {
 		super(instance, 20);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new CovenantEliteRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -59,16 +54,8 @@ public class CovenantEliteEntity extends OryginlnModModElements.ModElement {
 				() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("covenant_elite_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
-	}
-
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos,
-						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -103,9 +90,11 @@ public class CovenantEliteEntity extends OryginlnModModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, false));
-			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 		}
 
 		@Override

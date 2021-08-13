@@ -7,12 +7,8 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
@@ -34,14 +30,11 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.material.Material;
 
 import net.mcreator.oryginlnmod.item.PlasmastitItem;
 import net.mcreator.oryginlnmod.item.GunItem;
-import net.mcreator.oryginlnmod.item.Gan2Item;
 import net.mcreator.oryginlnmod.entity.renderer.CovenantElitepistolRenderer;
 import net.mcreator.oryginlnmod.OryginlnModModElements;
 
@@ -54,7 +47,6 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 		super(instance, 18);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new CovenantElitepistolRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -64,16 +56,8 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 				.setRegistryName("covenant_elitepistol_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
-	}
-
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos,
-						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -148,7 +132,7 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 		}
 
 		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
-			Gan2Item.shoot(this, target);
+			GunItem.shoot(this, target);
 		}
 	}
 }
