@@ -80,7 +80,6 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 			super(type, world);
 			experienceValue = 25;
 			setNoAI(false);
-			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(GunItem.block, (int) (1)));
 			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(PlasmastitItem.block, (int) (1)));
 		}
@@ -107,11 +106,6 @@ public class CovenantElitepistolEntity extends OryginlnModModElements.ModElement
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		@Override
-		public boolean canDespawn(double distanceToClosestPlayer) {
-			return false;
 		}
 
 		@Override

@@ -78,7 +78,6 @@ public class CovenantEliteEntity extends OryginlnModModElements.ModElement {
 			super(type, world);
 			experienceValue = 25;
 			setNoAI(false);
-			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(EnergiswordItem.block, (int) (1)));
 		}
 
@@ -100,11 +99,6 @@ public class CovenantEliteEntity extends OryginlnModModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		@Override
-		public boolean canDespawn(double distanceToClosestPlayer) {
-			return false;
 		}
 
 		@Override
