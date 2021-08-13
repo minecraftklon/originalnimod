@@ -109,10 +109,10 @@
       "value": ""
     },
     "rangedItemType": "Gan2",
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 1,
-    "mobSpawningType": "creature",
+    "spawningProbability": 3,
+    "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
